@@ -1,4 +1,11 @@
 import "../styles/global.css";
+import "../styles/package/aos.css";
+import "../styles/package/bootstrap-5.3.2.min.css";
+import "../styles/package/lity.min.css";
+import "../styles/package/main.css";
+import "../styles/package/nice-select.css";
+import "../styles/package/nouislider.min.css";
+import "../styles/package/swiper-bundle.min.css";
 
 export const metadata = {
   title: 'Next.js',
@@ -13,6 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+
+
+        {/* admin */}
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/source-sans-3@5.0.12/index.css" integrity="sha256-tXJfXfp6Ewt1ilPzLDtQnJV4hclT9XuaZUKyUvmyr+Q=" crossOrigin="anonymous" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.3.0/styles/overlayscrollbars.min.css" integrity="sha256-dSokZseQNT08wYEWiz5iLI8QPlKxG+TswNRD8k35cpg=" crossOrigin="anonymous" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.min.css" integrity="sha256-Qsx5lrStHZyR9REqhUF8iQt73X06c8LGIUPzpOhwRrI=" crossOrigin="anonymous" />
@@ -21,8 +31,32 @@ export default function RootLayout({
         <script src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.3.0/browser/overlayscrollbars.browser.es6.min.js" integrity="sha256-H2VM7BKda+v2Z4+DRy69uknwxjyDRhszjXFhsL4gD3w=" crossOrigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha256-whL0tQWoY1Ku1iskqPFvmZ+CHsvmRWx/PIoEvIeWh4I=" crossOrigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha256-YMa+wAM6QkVyz999odX7lPRxkoYAan8suedu4k2Zur8=" crossOrigin="anonymous"></script>
+
+
+        {/* Site */}
+        {/* <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> */}
+        <script src="assets/js/jquery_3.7.1.min.js"></script>
+
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+
+        <script src="assets/js/bootstrap_5.3.2.bundle.min.js"></script>
+
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <script src="assets/js/lity.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.1/nouislider.min.js"></script>
+        {/* <script src="assets/js/custom.js"></script> */}
+
+        {/* <script src="assets/js/aos.js"></script> */}
+        {/* <script>
+          AOS.init();
+        </script> */}
+
       </head>
       <body>{children}</body>
+
+
+
     </html>
   )
 }
